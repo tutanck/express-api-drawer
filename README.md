@@ -15,17 +15,44 @@ npm i express-api-drawer
 ```
 
 ## Usage
+Asume you have an express route map like this ([see example here](https://github.com/expressjs/express/blob/4.13.1/examples/route-map/index.js#L52-L66)).
 
 ```Javascript
-require('express-api-drawer')
+const verbose = true;
+
+//express
+const express = require('express');
+const app = express();
+
+const config = require('express-api-drawer');
+config(app); // setup the draw function on app
+
+const api = {
+  '/users': {
+    get: users.list,
+    delete: users.delete,
+    '/:uid': {
+      get: users.get,
+      '/pets': {
+        get: pets.list,
+        '/:pid': {
+          delete: pets.delete
+        }
+      }
+    }
+  }
+};
+
+
+app.draw(api, verbose); // we can now draw the api
 ```
 
 ## Author
 
 👤 **tutanck**
 
-* Twitter: [@tutanck](https://twitter.com/tutanck)
-* Github: [@tutanck](https://github.com/tutanck)
+- Twitter: [@tutanck](https://twitter.com/tutanck)
+- Github: [@tutanck](https://github.com/tutanck)
 
 ## 🤝 Contributing
 
@@ -35,5 +62,6 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
