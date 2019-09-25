@@ -6,6 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "tutanck",
+  "contributors": [
+    "tutanck <tutanck@gmail.com>"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tutanck/express-api-drawer"
+  },
   "keywords": [
     "express",
     "api",
@@ -13,7 +22,5 @@
     "automation",
     "map",
     "route"
-  ],
-  "author": "tutanck",
-  "license": "ISC"
+  ]
 }
