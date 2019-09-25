@@ -45,6 +45,10 @@ const api = {
 
 
 app.draw(api, verbose); // we can now draw the api
+
+//start the server 
+app.listen(3000);
+  console.log('Express started on port 3000');
 ```
 
 ## Author
