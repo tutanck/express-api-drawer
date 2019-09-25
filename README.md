@@ -15,6 +15,7 @@ npm i express-api-drawer
 ```
 
 ## Usage
+
 Asume you have an express route map like this ([see example here](https://github.com/expressjs/express/blob/4.13.1/examples/route-map/index.js#L52-L66)).
 
 ```Javascript
@@ -46,9 +47,9 @@ const api = {
 
 app.draw(api, verbose); // we can now draw the api
 
-//start the server 
+//start the server
 app.listen(3000);
-  console.log('Express started on port 3000');
+console.log('Express started on port 3000');
 ```
 
 ## Author
