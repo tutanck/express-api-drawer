@@ -56,7 +56,7 @@ app.draw(api, verbose); // we can now draw the api
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/tutanck/express-api-drawer/issues).
+Contributions, issues and feature requests are welcome!<br />I recently fell in ❤️ with [Supernova](https://www.youtube.com/watch?v=eTokzCWOHg0) and issues! <br />Feel free to check [issues page](https://github.com/tutanck/express-api-drawer/issues).
 
 ## Show your support
 
