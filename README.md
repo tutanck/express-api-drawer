@@ -16,7 +16,7 @@ npm i express-api-drawer
 
 ## Usage
 
-```sh
+```Javascript
 require('express-api-drawer')
 ```
 
